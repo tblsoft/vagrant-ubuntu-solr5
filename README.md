@@ -1,6 +1,6 @@
-# Solr 5.0.0 environment
+# Solr 5.0.0 vagrant ubuntu environment
 
-This vagrant image will install a precise 64 ubuntu image with solr 5.0.0
+This vagrant image will install a precise 64 ubuntu image with solr 5.0.0.
 
 ## Pre-requisites
 Ensure you have the following tools installed:
@@ -45,3 +45,6 @@ Ensure you have the following tools installed:
 * ```mv package.box precise64-solr5.box```
 * ```vagrant box add precise64-solr5 precise64-solr5.box```
 * Use ```precise64-solr5``` as the name of the box in your VagrantFile ```config.vm.box = "precise64-solr5"```
+
+#Remarks
+* The project was forked from https://github.com/seshendra/vagrant-ubuntu-tomcat7
