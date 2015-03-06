@@ -37,7 +37,7 @@ Ensure you have the following tools installed:
 * After provisioning the solr service have to be startet manually sudo ```/etc/init.d/solr start```
   * use ```sudo /etc/inid.d/solr start | stop | status``` to start, stop and retrieve the current status for solr
 * Vagrant is setup to map port 8983 of the VM to port 8888 on your machine
-	*  solr admin console [http://localhost:8888/solr]
+	*  solr admin console [http://localhost:8888/solr](http://localhost:8888/solr)
 
 ## Package as a box for customizing in your projects
 * After box is configured and provisioned, you can package and use this as your base box to speed up your subsequent reloads
