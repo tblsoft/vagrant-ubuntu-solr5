@@ -30,14 +30,14 @@ Ensure you have the following tools installed:
 * $ ```vagrant up```
 	* brings up the VM with solr and java installed.
 * $ ```vagrant ssh```
-	* open solr admin consoloe http://localhost:8888/solr
+	* open solr admin consoloe [http://localhost:8888/solr]
 
 ## Deployment Details
 * solr is starting automatically with init.d
 * After provisioning the solr service have to be startet manually sudo ```/etc/init.d/solr start```
   * use ```sudo /etc/inid.d/solr start | stop | status``` to start, stop and retrieve the current status for solr
 * Vagrant is setup to map port 8983 of the VM to port 8888 on your machine
-	*  solr admin console http://localhost:8888/solr
+	*  solr admin console [http://localhost:8888/solr]
 
 ## Package as a box for customizing in your projects
 * After box is configured and provisioned, you can package and use this as your base box to speed up your subsequent reloads
@@ -47,4 +47,4 @@ Ensure you have the following tools installed:
 * Use ```precise64-solr5``` as the name of the box in your VagrantFile ```config.vm.box = "precise64-solr5"```
 
 #Remarks
-* The project was forked from https://github.com/seshendra/vagrant-ubuntu-tomcat7
+* The project was forked from [https://github.com/seshendra/vagrant-ubuntu-tomcat7]
