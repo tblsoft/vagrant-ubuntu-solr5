@@ -2,6 +2,9 @@
 
 This vagrant image will install a precise 64 ubuntu image with solr 5.0.0.
 
+## TODOs
+* check the [solr puppet module](https://forge.puppetlabs.com/vamsee/solr)
+
 ## Pre-requisites
 Ensure you have the following tools installed:
 * virtualbox - https://www.virtualbox.org/
@@ -46,5 +49,6 @@ Ensure you have the following tools installed:
 * ```vagrant box add precise64-solr5 precise64-solr5.box```
 * Use ```precise64-solr5``` as the name of the box in your VagrantFile ```config.vm.box = "precise64-solr5"```
 
-#Remarks
+##Remarks
 * The project was forked from [https://github.com/seshendra/vagrant-ubuntu-tomcat7]
+
