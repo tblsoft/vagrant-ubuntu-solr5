@@ -30,7 +30,7 @@ Ensure you have the following tools installed:
 * $ ```vagrant up```
 	* brings up the VM with solr and java installed.
 * $ ```vagrant ssh```
-	* open solr admin consoloe [http://localhost:8888/solr]
+	* open solr admin consoloe [http://localhost:8888/solr http://localhost:8888/solr]
 
 ## Deployment Details
 * solr is starting automatically with init.d
