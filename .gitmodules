@@ -1,0 +1,9 @@
+[submodule "manifests/modules/puppetlabs-apt"]
+	path = manifests/modules/puppetlabs-apt
+	url = https://github.com/puppetlabs/puppetlabs-apt.git
+[submodule "manifests/modules/puppetlabs-stdlib"]
+	path = manifests/modules/puppetlabs-stdlib
+	url = https://github.com/puppetlabs/puppetlabs-stdlib.git
+[submodule "manifests/modules/puppet-wget"]
+	path = manifests/modules/puppet-wget
+	url = https://github.com/maestrodev/puppet-wget
