@@ -105,9 +105,8 @@ class java-development-env {
 
   exec { "initd_solr":
 	cwd => "/opt",
-	command => "cp /opt/solr/bin/init.d/solr /etc/init.d/solr; chmod 755 /etc/init.d/solr; chown root:root /etc/init.d/solr; mkdir /var/solr; cp /opt/solr/bin/solr.in.sh /var/solr; update-rc.d solr defaults; update-rc.d solr enable; /etc/init.d/solr start",
+	command => "cp /opt/solr/bin/init.d/solr /etc/init.d/solr; chmod 755 /etc/init.d/solr; chown root:root /etc/init.d/solr; mkdir /var/solr; cp /opt/solr/bin/solr.in.sh /var/solr; update-rc.d solr defaults; update-rc.d solr enable;",
 	require => Exec["extract_solr"],
-	notify => Exec["start_solr"],
 	refreshonly => true,
   }
 
@@ -117,14 +116,6 @@ class java-development-env {
 	mode => 0755,
 	recurse => true,
 	require => Exec["extract_solr"],
-  }
-
-
-  exec { "start_solr":
-	cwd => "/opt",
-	command => "/etc/init.d/solr start",
-	require => Exec["initd_solr"],
-	refreshonly => true,
   }
 
   exec { "update_supervisor":
